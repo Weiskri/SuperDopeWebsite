@@ -1,0 +1,32 @@
+﻿.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 20rem;
+    margin: 2rem auto;
+    padding: 11px;
+    max-width: 1000px;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.flexItem {
+    margin: 5px;
+    padding: 11px;
+    flex-grow: 1;
+}
+
+.flexItem:first-child {
+    margin: 0;
+}
+.flexItem--3 {
+    flex-grow: 5;
+}
+.flexItem--4 {
+    order: -1;
+    flex-basis: 350px;
+}
+.flexItem--2 {
+    align-self: stretch;
+}
